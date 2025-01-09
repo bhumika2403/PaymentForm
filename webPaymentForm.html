@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+    <link rel="stylesheet" href="styleform.css">
+</head>
+<body >
+    <!--USER DETAILS-->
+    <form action="" class="container">
+        <h1>Payment Form</h1>
+        <p>requirements fields are followed by *....</p>
+        <h2>Contact Information</h2>
+        <p>Name:* <input type="text" name="name" required></p> <!--input tag is to take any input from the user in the from of text time or any number -->
+       <fieldset> <legend>Gender * </legend>
+        <p>Male <input type="radio" name="Gender" id="Gender" required>
+        Female <input type="radio" name="Gender" id="Gender" required>
+        others <input type="radio" name="Gender" id="Gender" required></p>
+    </fieldset>
+    <p>Address:* <textarea name="" id="" cols="30" rows="10" required></textarea></p>
+    <p>Email:* <input type="email" name="Email" id="" required></p>
+    <p>PinCode:* <input type="number" name="PinCode" id="" required></p>
+<hr>
+<h2>Payment Information</h2>
+<p>Card Type:*
+    <select 
+         name="CardType" id="CardType" required>
+        <option value="">--select a card type--</option>
+        <option value="visa">visa</option>
+        <option value="creditCard">creditCard</option>
+        <option value="DebitCard">DebitCard</option>
+    </select>
+</p>
+     <p>
+        card Number:-* <input type="number" name="CardNumber" id="CardNumber" required>
+     </p>
+     <p>
+        Card Expiration Date:-* <input type="date" name="Exp_date" id="Exp_date" required>
+     </p>
+     <p>
+        cvv Number:-* <input type="password" name="cvv" id="cvv" required>
+     </p>
+     <p>
+        submit:- <input type="submit" value="paynow">
+     </p>
+    </form>
+</body>
+</html>
